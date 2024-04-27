@@ -19,6 +19,8 @@ public class Locators
 		
 		// finding element on UI and storing it inside a variable
 		WebElement emailTextBox = driver.findElement(By.id("input-email"));
+		
+//		      /html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input
 
 		Thread.sleep(2000);
 
@@ -33,10 +35,11 @@ public class Locators
 		driver.findElement(By.xpath("//input[contains(@class,'btn-primary')]")).click();
 	
 		
-		Thread.sleep(5000);
+		Thread.sleep(5000);              
 		
 	
 		// ************ LOGOUT *************
+		
 		// My Account Click
 		driver.findElement(By.xpath("//span[text()='My Account']")).click();
 		
