@@ -20,6 +20,8 @@ public class Checkbox
 		 WebElement chkbx = driver.findElement(By.xpath("//input[@id='checkbox1']"));
 		
 		 chkbx.click();
+		 
+		 	
 		
 		 Thread.sleep(2000);
 		

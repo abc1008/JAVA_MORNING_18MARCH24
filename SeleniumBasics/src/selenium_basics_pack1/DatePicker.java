@@ -23,11 +23,8 @@ public class DatePicker
 			 datePicker.click();
 			 
 			 Thread.sleep(2000);
-//			  WebElement previousButton = driver.findElement(By.xpath("//a[@title='Prev']"));
-//			   WebElement monthYear = driver.findElement(By.xpath("//div[@class='ui-datepicker-title']"));
-//			   monthYear.getText();
-			   
-//			   System.out.println(monthYear.getText());
+			 
+			 int dayToSelect = 13;
 			   int i = 0;
 			   
 			   while(i == 0)    // always true condition
@@ -48,9 +45,16 @@ public class DatePicker
 			  		 break;
 			  	 }
 			   }
-			
-			
-			
+			  Thread.sleep(2000);
+			 
+			  WebElement day = driver.findElement(By.xpath("//a[text()='" + dayToSelect + "']"));
+			  day.click();
+			  
+			  
+			String attr =  day.getAttribute("title");
+			System.out.println(attr);
+			 
+			 
 		}
 }
 

@@ -1,12 +1,13 @@
 package selenium_basics_pack1;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
-public class Locators
+public class LoginActionsClass
 {
 	public static void main(String[] args) throws InterruptedException
 	{
@@ -27,35 +28,24 @@ public class Locators
 
 		// enter data in a webelement located above
 		emailTextBox.sendKeys("ag89111@gmail.com");
+		Actions act = new Actions(driver);
+		Thread.sleep(2000);
+		act.sendKeys(Keys.TAB).perform();     // Pressing Tab key on keyboard
+		
+		Thread.sleep(2000);
+		act.sendKeys("Login@123").perform();
+		
+//		WebElement password = driver.findElement(By.name("password"));
+//		password.sendKeys("Login@123");
+		
+		Thread.sleep(2000);
+		act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
+		
+//		driver.findElement(By.xpath("//input[contains(@class,'btn-primary')]")).click();
+	
+	   
 		
 
-		Thread.sleep(2000);
-		WebElement password = driver.findElement(By.name("password"));
-		password.sendKeys("Login@123");
-		
-		Thread.sleep(2000);
-		WebElement btnLogin = driver.findElement(By.xpath("//input[contains(@class,'btn-primary')]"));
-	
-//		btnLogin.click();
-		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();",btnLogin );
-		
-		Thread.sleep(5000);              
-		
-//		WebElement mp3Players = driver.findElement(By.xpath("//a[text()='MP3 Players']"));
-	
-//		js.executeScript("arguments[0].click();",mp3Players );
-		
-		
-	
-		// ************ LOGOUT *************
-		
-		// My Account Click
-		driver.findElement(By.xpath("//span[text()='My Account']")).click();
-		
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("(//a[text()='Logout'])[1]")).click();
 		
 		
 		
