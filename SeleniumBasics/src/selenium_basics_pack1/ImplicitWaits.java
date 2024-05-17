@@ -13,13 +13,19 @@ public class ImplicitWaits
 	{
 		
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));   // implicit Wait
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(65));   // implicit Wait
 		
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		
 		
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("admin123");
+		driver.findElement(By.xpath("//button[@type='submi']")).click();
+	
+		
+		
+	
 		
 		
 		

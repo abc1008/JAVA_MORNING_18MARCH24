@@ -12,6 +12,9 @@ public class AlertPopups
 public static void main(String[] args) throws InterruptedException
 {
 	WebDriver driver = new ChromeDriver();
+
+	
+	
 	driver.manage().window().maximize();
 	driver.get("https://demo.automationtesting.in/Alerts.html");
 	

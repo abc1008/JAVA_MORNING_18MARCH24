@@ -92,6 +92,7 @@ public class Locators
 //			  File screenShot = screen.getScreenshotAs(OutputType.FILE);
 //			  File path = new File("D:\\Trainings\\TESTOMETER\\Selenium_JAVA_18Mar24_WEEKDAY\\Screenshots\\TestScreenShot.png");
 //			  Files.copy(screenShot, path);
+			 
 			 System.out.println("formattedDate : "+ formattedDate);
 			 CaptureScreen.getScreenShot(driver, "TestScreen1"+ formattedDate);
 			 
