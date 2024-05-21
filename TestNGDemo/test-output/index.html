@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Trainings\TESTOMETER\Selenium_JAVA_18Mar24_WEEKDAY\WEEKDAY_MORNING_GIT_LOCAL2\JAVA_MORNING_18MARCH24\TestNGDemo\groupingOfTcs.xml</span>
+                    <span>D:\Trainings\TESTOMETER\Selenium_JAVA_18Mar24_WEEKDAY\WEEKDAY_MORNING_GIT_LOCAL2\JAVA_MORNING_18MARCH24\TestNGDemo\Parameters.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,17 +104,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pack1.GroupingOfTcs" class="method navigator-link" hash-for-method="m3">m3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pack1.Parameters" class="method navigator-link" hash-for-method="m1(CHROME, 2024.2)">m1(CHROME, 2024.2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pack1.GroupingOfTcs" class="method navigator-link" hash-for-method="m4">m4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="pack1.GroupingOfTcs2" class="method navigator-link" hash-for-method="m6">m6</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="pack1.Parameters" class="method navigator-link" hash-for-method="m2(CHROME, 2024.2)">m2(CHROME, 2024.2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,36 +127,23 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">pack1.GroupingOfTcs2</span>
+              <span class="class-name">pack1.Parameters</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="m6">
-                  </a> <!-- m6 -->
-                  <span class="method-name">m6</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">pack1.GroupingOfTcs</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="m3">
-                  </a> <!-- m3 -->
-                  <span class="method-name">m3</span>
+                  <a name="m1(CHROME, 2024.2)">
+                  </a> <!-- m1(CHROME, 2024.2) -->
+                  <span class="method-name">m1</span>
+                  <span class="parameters">(CHROME, 2024.2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="m4">
-                  </a> <!-- m4 -->
-                  <span class="method-name">m4</span>
+                  <a name="m2(CHROME, 2024.2)">
+                  </a> <!-- m2(CHROME, 2024.2) -->
+                  <span class="method-name">m2</span>
+                  <span class="parameters">(CHROME, 2024.2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -169,7 +151,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Trainings\TESTOMETER\Selenium_JAVA_18Mar24_WEEKDAY\WEEKDAY_MORNING_GIT_LOCAL2\JAVA_MORNING_18MARCH24\TestNGDemo\groupingOfTcs.xml</span>
+            <span class="header-content">D:\Trainings\TESTOMETER\Selenium_JAVA_18Mar24_WEEKDAY\WEEKDAY_MORNING_GIT_LOCAL2\JAVA_MORNING_18MARCH24\TestNGDemo\Parameters.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -177,15 +159,10 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;Regression&quot;/&gt;
-        &lt;exclude name=&quot;Sanity&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+    &lt;parameter name=&quot;BrowserType&quot; value=&quot;CHROME&quot;/&gt;
+    &lt;parameter name=&quot;BuildVersion&quot; value=&quot;2024.2&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;pack1.GroupingOfTcs2&quot;/&gt;
-      &lt;class name=&quot;pack1.GroupingOfTcs&quot;/&gt;
+      &lt;class name=&quot;pack1.Parameters&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -199,7 +176,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,22 +186,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">Regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">m3</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">m4</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">m6</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -241,24 +202,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'm6')
-data.setCell(0, 2, 'pack1.GroupingOfTcs2')
-data.setCell(0, 3, 10);
+data.setCell(0, 1, 'm1')
+data.setCell(0, 2, 'pack1.Parameters')
+data.setCell(0, 3, 9);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'm4')
-data.setCell(1, 2, 'pack1.GroupingOfTcs')
-data.setCell(1, 3, 4);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'm3')
-data.setCell(2, 2, 'pack1.GroupingOfTcs')
-data.setCell(2, 3, 3);
+data.setCell(1, 1, 'm2')
+data.setCell(1, 2, 'pack1.Parameters')
+data.setCell(1, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 ms</span>
+              <span class="suite-total-time">Total running time: 10 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -270,50 +227,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">m6</span>
+              <span class="reporter-method-name">m1(CHROME, 2024.2)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">m2 test case.</span>
+                <span class="reporter-method-output">m1 test case.</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">m3</span>
+              <span class="reporter-method-name">m2(CHROME, 2024.2)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">m3 test case.</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">m4</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">m4 test case.</span>
+                <span class="reporter-method-output">m1 test case.</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">pack1.GroupingOfTcs2</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">m7</span>
-                <br/>
-                <span class="ignored-method-name">m5</span>
-                <br/>
-                <span class="ignored-method-name">m8</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">pack1.GroupingOfTcs</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">m2</span>
-                <br/>
-                <span class="ignored-method-name">m1</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -322,21 +253,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">pack1.GroupingOfTcs2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pack1.Parameters</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">m6</span>
+                <span class="method-name">m1(CHROME, 2024.2)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">pack1.GroupingOfTcs</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">m3</span>
-                <span class="method-start">17 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">m4</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-name">m2(CHROME, 2024.2)</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
