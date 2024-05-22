@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="BrowserType" value="CHROME"/>
-    <parameter name="BuildVersion" value="2024.2"/>
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="pack1.Parameters">
+      <class name="selenium_TestNgDemo.ParallelExecution_SeleniumTC">
         <methods>
-          <include name="m2"/>
+          <include name="clickOnAddrBook"/>
+          <include name="TestCase3"/>
         </methods>
-      </class> <!-- pack1.Parameters -->
+      </class> <!-- selenium_TestNgDemo.ParallelExecution_SeleniumTC -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

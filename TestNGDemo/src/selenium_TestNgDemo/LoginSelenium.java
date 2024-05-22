@@ -9,7 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import dev.failsafe.internal.util.Assert;
@@ -18,13 +20,20 @@ public class LoginSelenium
 {
 	WebDriver driver;
 	
+	@BeforeSuite
+	public void initializeBrowser()
+	{
+	driver = new ChromeDriver();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	driver.manage().window().maximize();
+	driver.get("https://tutorialsninja.com/demo/");
+	}
+	
 	@BeforeMethod
 	public void login() throws InterruptedException
 	{
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().window().maximize();
-		driver.get("https://tutorialsninja.com/demo/index.php?route=account/login");
+		driver.findElement(By.xpath("//span[text()='My Account']")).click();
+		driver.findElement(By.xpath("//ul[contains(@class,'dropdown-menu-right')]//a[text()='Login']")).click();
 		
 		// finding element on UI and storing it inside a variable
 		WebElement emailTextBox = driver.findElement(By.id("input-email"));
@@ -41,11 +50,37 @@ public class LoginSelenium
 	
 		btnLogin.click();
 		
-	Thread.sleep(4000);
+	Thread.sleep(2000);
 	}
 	
 	@Test
 	public void clickOnAddrBook()
+	{
+		driver.findElement(By.xpath("//aside//a[text()='Address Book']")).click();
+		
+	  WebElement breadCrumb = driver.findElement(By.xpath("//ul//a[text()='Address Book']"));
+	  
+	   boolean isWebElementDisplayed = breadCrumb.isDisplayed();
+	  
+	  org.testng.Assert.assertEquals(isWebElementDisplayed, true);
+	  
+	}
+	
+	@Test
+	public void TestCase2()
+	{
+		driver.findElement(By.xpath("//aside//a[text()='Address Book']")).click();
+		
+	  WebElement breadCrumb = driver.findElement(By.xpath("//ul//a[text()='Address Book']"));
+	  
+	   boolean isWebElementDisplayed = breadCrumb.isDisplayed();
+	  
+	  org.testng.Assert.assertEquals(isWebElementDisplayed, true);
+	  
+	}
+	
+	@Test
+	public void TestCase3()
 	{
 		driver.findElement(By.xpath("//aside//a[text()='Address Book']")).click();
 		
@@ -74,7 +109,12 @@ public class LoginSelenium
 		 }
 	}
 	
-	
+	@AfterSuite
+	public void closeBrowser()
+	{
+//		driver.close();  // close currently focused window
+		driver.quit();  // close the entire browser
+	}
 	
 
 }
