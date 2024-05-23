@@ -5,7 +5,8 @@
     <classes>
       <class name="pack1.ListenerTest">
         <methods>
-          <include name="m1"/>
+          <include name="m3"/>
+          <include name="m2"/>
         </methods>
       </class> <!-- pack1.ListenerTest -->
     </classes>

@@ -18,7 +18,7 @@ import dev.failsafe.internal.util.Assert;
 
 public class ParallelExecution_SeleniumTC
 {
-	WebDriver driver;
+//	WebDriver driver;
 	
 //	@BeforeSuite
 //	public void initializeBrowser()
@@ -61,8 +61,7 @@ public class ParallelExecution_SeleniumTC
 	@Test
 	public void clickOnAddrBook() throws InterruptedException
 	{
-		
-		driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");
@@ -114,7 +113,7 @@ public class ParallelExecution_SeleniumTC
 	@Test
 	public void TestCase2() throws InterruptedException
 	{
-		driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");
@@ -165,7 +164,7 @@ public class ParallelExecution_SeleniumTC
 	@Test
 	public void TestCase3() throws InterruptedException
 	{
-		driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");

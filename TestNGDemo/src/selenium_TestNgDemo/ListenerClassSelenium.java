@@ -1,11 +1,18 @@
-package pack1;
+package selenium_TestNgDemo;
 
+import java.io.IOException;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ListenerClass implements ITestListener
+import utility.CaptureScreen;
+
+public class ListenerClassSelenium extends ListenerTestSelenium implements ITestListener
 {
+//	WebDriver driver;
+	
 	@Override
 	public void onTestStart(ITestResult result)
 	{
@@ -22,6 +29,19 @@ public class ListenerClass implements ITestListener
 	public void onTestFailure(ITestResult result)
 	{
 		System.out.println("onTestFailure : " +result.getName());
+		
+		try
+		{
+			CaptureScreen.getScreenShot(driver, "ListenerScreenshot");
+		}
+		catch (IOException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+		
 	}
 
 	@Override

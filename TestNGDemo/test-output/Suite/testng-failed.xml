@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="methods" name="Test(failed)">
+  <listeners>
+    <listener class-name="pack1.ListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="selenium_TestNgDemo.ParallelExecution_SeleniumTC">
+      <class name="pack1.ListenerTest">
         <methods>
-          <include name="clickOnAddrBook"/>
-          <include name="TestCase3"/>
+          <include name="m3"/>
+          <include name="m2"/>
         </methods>
-      </class> <!-- selenium_TestNgDemo.ParallelExecution_SeleniumTC -->
+      </class> <!-- pack1.ListenerTest -->
+      <class name="pack1.ListenerTest2">
+        <methods>
+          <include name="m5"/>
+          <include name="m6"/>
+        </methods>
+      </class> <!-- pack1.ListenerTest2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
