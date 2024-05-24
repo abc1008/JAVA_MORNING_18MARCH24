@@ -24,14 +24,12 @@ public static void main(String[] args) throws InterruptedException
 	Thread.sleep(2000);
 	driver.switchTo().alert().accept();     // click on OK button in alert popup
 	
-	
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//a[text()='Alert with OK & Cancel ']")).click();
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("//button[@onclick='confirmbox()']")).click();
 	Thread.sleep(2000);
 	driver.switchTo().alert().dismiss();    // click on Cancel button in alert popup
-	
 	
 	
 	Thread.sleep(2000);
