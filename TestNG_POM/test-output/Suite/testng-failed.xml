@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testSuites.EditAddressTestSuite">
+        <methods>
+          <include name="tc_125_LogoutTest"/>
+          <include name="closeBrowser"/>
+          <include name="tc_1245_editAddressTest"/>
+          <include name="initBrowser"/>
+          <include name="tc_124_LoginTest"/>
+        </methods>
+      </class> <!-- testSuites.EditAddressTestSuite -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

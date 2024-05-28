@@ -11,7 +11,11 @@ public class LoginTestScript extends BaseTest
 		loginPage.login();
 	}
 	
-	
+	public void LogoutTestScript()
+	{
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.logout();
+	}
 	
 	
 	

@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSuites.LoginTestSuite">
+      <class name="testSuites.EditAddressTestSuite">
         <methods>
-          <include name="tc_124_LoginTest"/>
+          <include name="tc_125_LogoutTest"/>
+          <include name="closeBrowser"/>
+          <include name="tc_1245_editAddressTest"/>
           <include name="initBrowser"/>
+          <include name="tc_124_LoginTest"/>
         </methods>
-      </class> <!-- testSuites.LoginTestSuite -->
+      </class> <!-- testSuites.EditAddressTestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
