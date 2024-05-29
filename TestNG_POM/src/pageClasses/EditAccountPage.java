@@ -1,5 +1,6 @@
 package pageClasses;
 
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import basePack.BaseTest;
 import utility.ExplicitWait;
+import utility.ExtentReportsHelper;
 
 public class EditAccountPage
 {
@@ -53,25 +55,34 @@ public class EditAccountPage
 	
 	
 	// public method
-	public boolean editAccunt()
+	public boolean editAccunt() throws IOException
 	{
 		boolean testResult;
 		
 		buttonEditAccount.click();
+		ExtentReportsHelper.logInfo("Clicked on 'Edit' button");
+		
 		textBoxFname.sendKeys("ABC");
+		ExtentReportsHelper.logInfo("Entered data in 'First Name' field");
+		
 		textBoxLname.sendKeys("XYZ");
+		ExtentReportsHelper.logInfo("Entered data in 'Last Name' field");
+		
 		buttonContinue.click();
+		ExtentReportsHelper.logInfo("Clicked on 'Continue' button");
 		
 		ExplicitWait.waitUntilElementIsVisible(msgAlert);
 		
 			if(msgAlert.isDisplayed())
 			{
-				System.out.println("Account successfully updated.");
+//				System.out.println("Account successfully updated.");
+				ExtentReportsHelper.logPass("Account successfully updated.");
 				testResult = true;
 			}
 			else 
 			{
-				System.out.println("Account not successfully updated.");
+//				System.out.println("Account not successfully updated.");
+				ExtentReportsHelper.logFail("Account not successfully updated.");
 				testResult = false;
 			}
 			

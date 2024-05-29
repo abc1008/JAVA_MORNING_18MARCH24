@@ -67,5 +67,17 @@
 	<classpathentry kind="lib" path="D:/Trainings/TESTOMETER/Selenium_JAVA_18Mar24_WEEKDAY/Jar Files/selenium-java-4.19.1/lib/opentelemetry-sdk-trace-1.36.0.jar"/>
 	<classpathentry kind="lib" path="D:/Trainings/TESTOMETER/Selenium_JAVA_18Mar24_WEEKDAY/Jar Files/selenium-java-4.19.1/lib/opentelemetry-semconv-1.23.1-alpha.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/extentreports-5.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/extentreports-5.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/freemarker-2.3.30.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/freemarker-2.3.32.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/lombok-1.18.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/lombok-1.18.26.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/reactive-streams-1.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/rxjava-3.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Downloads/jar_files/rxjava-3.1.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
