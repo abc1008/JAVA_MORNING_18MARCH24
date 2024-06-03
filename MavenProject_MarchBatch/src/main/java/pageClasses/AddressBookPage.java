@@ -74,8 +74,8 @@ public class AddressBookPage
 		
 		SeleniumEventHelpers.scrollTO(driver, dropdownCoutry);
 		
-		WebDropdownHelper.selectDropdownByValue(dropdownCoutry, "2");
-		WebDropdownHelper.selectDropdownByValue(dropdownState, "36");
+		WebDropdownHelper.selectDropdownByIndex(dropdownCoutry, 3);
+		WebDropdownHelper.selectDropdownByIndex(dropdownState, 5);
 		
 		buttonContinue.click();
 		

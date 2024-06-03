@@ -59,7 +59,7 @@ public class LoginPage {
 		buttonMyAccount.click();
 		buttonLoginFromDropdown.click();
 		
-		ExplicitWait.waitUntilElementIsVisible(driver,textBoxEmailAddr);
+		ExplicitWait.waitUntilElementIsVisible(driver,buttonLogin);
 		
 		textBoxEmailAddr.sendKeys(ConfigReader.readData("UserID"));
 		ExtentReportsHelper.logInfo("Data entered in 'UserID' field.");

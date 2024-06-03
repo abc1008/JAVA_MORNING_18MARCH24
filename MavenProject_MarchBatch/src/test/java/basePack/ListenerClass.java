@@ -20,10 +20,9 @@ public class ListenerClass implements ITestListener
 		
 		ExtentReportsHelper.startTest(currentTestCaseName);
 		
-		LoginTestScript loginTestScript = new LoginTestScript();
 		try 
 		{
-			loginTestScript.performLogin();
+			new LoginTestScript().performLogin();
 		} 
 		catch (IOException e) 
 		{

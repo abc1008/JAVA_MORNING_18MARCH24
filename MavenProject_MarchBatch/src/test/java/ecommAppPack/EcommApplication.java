@@ -3,6 +3,7 @@ package ecommAppPack;
 import basePack.BaseTest;
 import pageClasses.AddressBookPage;
 import pageClasses.EditAccountPage;
+import pageClasses.LoginPage;
 
 public class EcommApplication extends BaseTest {
 	
@@ -24,6 +25,14 @@ public class EcommApplication extends BaseTest {
 		_addressBookPage = new AddressBookPage(driver);
 		
 		return _addressBookPage;
+	}
+	
+	private static LoginPage _loginPage;
+	public static LoginPage loginPage()
+	{
+		_loginPage = new LoginPage(driver);
+		
+		return _loginPage;
 	}
 	
 	

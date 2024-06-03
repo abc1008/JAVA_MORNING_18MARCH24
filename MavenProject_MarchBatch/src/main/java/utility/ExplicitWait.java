@@ -19,12 +19,13 @@ public class ExplicitWait{
 		
 		if(ele.isDisplayed())
 		{
-			System.out.println("Given element located on UI.");
+			ExtentReportsHelper.logInfo("Given element located on UI.");
 			return true;
 		}
 		else
 		{
 			System.out.println("Failed to locate given element on UI.");
+			ExtentReportsHelper.logInfo("Failed to locate given element on UI.");
 			return false;
 		}
 	}
@@ -39,12 +40,12 @@ public class ExplicitWait{
 		
 		if(ele.isDisplayed())
 		{
-			System.out.println("Given element located on UI.");
+			ExtentReportsHelper.logInfo("Given element located on UI.");
 			return true;
 		}
 		else
 		{
-			System.out.println("Failed to locate given element on UI.");
+			ExtentReportsHelper.logInfo("Failed to locate given element on UI.");
 			return false;
 		}
 	}
@@ -57,12 +58,12 @@ public class ExplicitWait{
 		
 		if(ele.isDisplayed())
 		{
-			System.out.println("Given element located on UI.");
+			ExtentReportsHelper.logInfo("Given element located on UI.");
 			return true;
 		}
 		else
 		{
-			System.out.println("Failed to locate given element on UI.");
+			ExtentReportsHelper.logInfo("Failed to locate given element on UI.");
 			return false;
 		}
 	}
